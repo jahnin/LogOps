@@ -1,2 +1,0 @@
-# LogOps
-Log parser
