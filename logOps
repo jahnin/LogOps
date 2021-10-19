@@ -1,0 +1,10 @@
+#!/bin/bash
+
+USAGETRACK="gss_usage_tracker.sh"
+EXECUTABLE="/usr/bin/python3"
+SCRIPT="/opt/gss/git/logops/LogOps.py"
+
+${USAGETRACK} ${SCRIPT} $@  # DO NOT source, calls exit 0  # DO NOT source, calls exit 0
+${EXECUTABLE} ${SCRIPT} $@  # source BASH scripts that ref any above
+
+exit 0
